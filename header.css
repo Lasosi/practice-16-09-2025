@@ -1,0 +1,35 @@
+.menu-list, .submenu{
+    list-style: none;
+    padding-left: 0;
+}
+.menu-list{
+    position: relative;
+}
+.submenu{
+    display: none;
+    position: absolute;
+    background-color: black;
+}
+.menu-item{
+    display: inline-block;
+}
+.menu-item:hover > .submenu{
+    display: block;
+}
+li:hover > a{
+    color: yellow;
+    text-decoration: underline;
+}
+.submenu li{
+    position: relative;
+}
+.submenu li:hover > .submenu{
+    display: block;
+    left: 100%;
+    top: 0;
+}
+.menu-list a{
+    text-transform: uppercase;
+    padding: 10px;
+    display: inline-block;
+}
